@@ -57,7 +57,7 @@ jobs:
             echo "VERSION=${{ inputs.tag_name }}" >> $GITHUB_ENV
             echo "VERSION=${VERSION#i}" >> $GITHUB_ENV
           else
-            echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+            echo "VERSION=${GITHUB_REF/refs\/tags\/i/}" >> $GITHUB_ENV
           fi        
         
       - name: Install dependencies
